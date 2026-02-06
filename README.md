@@ -2,6 +2,8 @@
 
 Détection de contrefaçon de billet par analyse de données et apprentissage automatique.
 
+dataset : https://www.kaggle.com/datasets/mdladla/fake-currency-data
+
 ## Contexte
 
 La contrefaçon de billets représente un enjeu majeur pour les institutions financières, les commerçants et les autorités monétaires. Selon la Banque Centrale Européenne, plus de 500 000 faux billets sont retirés de la circulation chaque année en Europe, entraînant des pertes économiques estimées à plusieurs millions d’euros.
