@@ -1,32 +1,29 @@
-# TrustNote
+# SmartSegment Auto
 
-Détection de contrefaçon de billet par analyse de données et apprentissage automatique.
+Optimisation de la stratégie marketing de l'entreprise par segmentation client.
 
-dataset : https://www.kaggle.com/datasets/mdladla/fake-currency-data
+dataset : https://www.kaggle.com/datasets/vetrirah/customer
 
 ## Contexte
 
-La contrefaçon de billets représente un enjeu majeur pour les institutions financières, les commerçants et les autorités monétaires. Selon la Banque Centrale Européenne, plus de 500 000 faux billets sont retirés de la circulation chaque année en Europe, entraînant des pertes économiques estimées à plusieurs millions d’euros.
+L’entreprise Anthony Blondel Automobile (ABA) est un acteur historique du marché automobile français, spécialisé dans la vente de véhicules haut de gamme (P1 à P5).
 
-Les billets contrefaits, souvent de qualité croissante, sont difficiles à détecter à l’œil nu, surtout pour les petites dénominations et dans des environnements à fort volume de transactions (caisses enregistreuses, distributeurs automatiques, etc.).
+Après une étude de marché approfondie, ABA a identifié une opportunité majeure : étendre son activité à de nouveaux marchés internationaux (Europe de l’Est, Asie du Sud-Est, Amérique Latine) en réutilisant sa stratégie de segmentation client, qui a fait ses preuves en France.
 
-Les méthodes traditionnelles de détection (marqueurs UV, filigranes) sont parfois insuffisantes ou coûteuses à déployer à grande échelle.
+En France, l’équipe commerciale d’ABA a classé ses clients en 4 segments distincts (A, B, C, D) en fonction de leur comportement d’achat, de leur profil socio-démographique et de leur sensibilité aux campagnes marketing.
 
-Dans ce contexte, les banques, commerces et institutions publiques ont besoin de solutions automatisées, précises et scalables pour identifier les billets suspects en temps réel, sans ralentir les opérations courantes.
-
-L’enjeu est double :
-
-- réduire les pertes financières liées à l’acceptation de faux billets ;
-- renforcer la confiance dans les transactions en espèces, encore largement utilisées malgré la digitalisation des paiements.
+Cette segmentation a permis d’optimiser les campagnes ciblées, d’augmenter le taux de conversion de 30% et de réduire les coûts marketing de 15% en adaptant les messages et les offres à chaque segment.
 
 ## Problématique métier
 
-Comment automatiser la détection des billets contrefaits à partir de leurs caractéristiques physiques (poids, dimensions, sécurité) et contextuelles (pays d’origine, dénomination), tout en s’adaptant à la diversité des devises et des montants en circulation ?
+Aujourd’hui, ABA a identifié 2 627 nouveaux clients potentiels sur ces marchés émergents. Cependant, classer manuellement ces clients dans les segments A, B, C ou D serait long, coûteux et sujet à des erreurs. De plus, les équipes commerciales locales manquent d’expertise pour reproduire cette segmentation.
+
+L'entreprise ABA sollilcite donc un **data scientist** afin d'aider à classer les 2627 nouveaux clients.
 
 ## Objectif Data Science
 
-L’objectif de ce projet est de **concevoir un modèle prédictif** capable de :
+Automatiser la classification des nouveaux clients dans les segments existants (A, B, C, D) **à l’aide d’un modèle prédictif**, afin de :
 
-- classer automatiquement un billet comme authentique ou contrefait (`Counterfeit = 1 ou 0`) à partir de données structurées, en tenant compte du pays et de la dénomination ;
-- identifier des profils de contrefaçon (via un modèle non supervisé) pour mieux comprendre les tendances et adapter les mesures de sécurité.
-- optimiser la précision et l’interprétabilité du modèle, afin de permettre une intégration opérationnelle (ex : via une API) dans des systèmes existants de vérification.
+- répliquer le succès de la stratégie française à l’international ;
+- personnaliser les campagnes marketing pour chaque segment (ex : offres premium pour le segment A, promotions pour le segment C). ;
+- maximiser le retour sur investissement (ROI) des actions commerciales.
