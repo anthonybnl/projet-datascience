@@ -4,9 +4,11 @@ Optimisation de la stratégie marketing de l'entreprise par segmentation client.
 
 dataset : https://www.kaggle.com/datasets/vetrirah/customer
 
+le dataset est a télécharger et à dézipper. Les fichiers CSV doivent être placés dans le dossier `data`.
+
 ## Contexte
 
-L’entreprise Anthony Blondel Automobile (ABA) est un acteur historique du marché automobile français, spécialisé dans la vente de véhicules haut de gamme (P1 à P5).
+L’entreprise ABA est un acteur historique du marché automobile français, spécialisé dans la vente de véhicules haut de gamme (P1 à P5).
 
 Après une étude de marché approfondie, ABA a identifié une opportunité majeure : étendre son activité à de nouveaux marchés internationaux (Europe de l’Est, Asie du Sud-Est, Amérique Latine) en réutilisant sa stratégie de segmentation client, qui a fait ses preuves en France.
 
