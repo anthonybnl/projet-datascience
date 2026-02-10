@@ -32,7 +32,15 @@ Automatiser la classification des nouveaux clients dans les segments existants (
 
 ## Technique
 
-Paramétrer l'environnement virtuel `venv` `python`, le fichier `requirements.txt` liste les dépendances `pip`.
+### Environnement Python
+
+Paramétrer l'environnement virtuel `venv` `python` :
+
+`python -m venv .venv`
+
+activez l'environnement virtuel (`.\.venv\Scripts\activate.bat` sous Windows, `source .venv/bin/activate` sous Linux / Unix)
+
+installez les dépendances : `pip install -r requirements.txt`
 
 ### Notebook jupyter
 
@@ -63,6 +71,6 @@ docker run -d --rm --name api-smart-segment-auto -p 8000:8000 projet-datascience
 
 Pour utiliser `docker-compose` :
 
-- `docker compose build` pour construire l'image ;
-- `docker compose up -d` pour lancer l'image ;
+- `docker compose build` pour construire l'image.
+- `docker compose up -d` pour lancer l'image.
 - `docker compose down` pour stopper et supprimer le conteneur.
