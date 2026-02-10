@@ -29,3 +29,40 @@ Automatiser la classification des nouveaux clients dans les segments existants (
 - répliquer le succès de la stratégie française à l’international ;
 - personnaliser les campagnes marketing pour chaque segment (ex : offres premium pour le segment A, promotions pour le segment C). ;
 - maximiser le retour sur investissement (ROI) des actions commerciales.
+
+## Technique
+
+Paramétrer l'environnement virtuel `venv` `python`, le fichier `requirements.txt` liste les dépendances `pip`.
+
+### Notebook jupyter
+
+le notebook `notebook-eda-models.ipynb` contient l'analyse exploratoire des données et l'entraînement des modèles.
+
+### API
+
+Les modèles sont exposés via API FastAPI :
+
+- lancer le serveur : `uvicorn api:app`
+- aller sur le [Swagger de l'API](http://127.0.0.1:8000/docs)
+
+### Docker
+
+Pour build l'image de l'API :
+
+```bash
+docker build -t projet-datascience .
+```
+
+Pour lancer l'API conteneurisée :
+
+```bash
+docker run -d --rm --name api-smart-segment-auto -p 8000:8000 projet-datascience
+```
+
+### Docker compose
+
+Pour utiliser `docker-compose` :
+
+- `docker compose build` pour construire l'image ;
+- `docker compose up -d` pour lancer l'image ;
+- `docker compose down` pour stopper et supprimer le conteneur.
